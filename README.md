@@ -84,5 +84,19 @@ Differences:
 
   -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
   --04
+  Stage" refers to preparing changes for the next commit. You use git add to stage changes.
+  In Git, the terms stage and index refer to an intermediate area where changes are collected before they are committed to the repository.
+  An intermediate area where changes are collected and reviewed before committing.
 
+  The stash command temporarily saves changes in your working directory and index (staging area) that you do not want to commit yet. 
+  It allows you to clean your working directory without committing changes, so you can work on something else.
+  Use git stash when you need to switch branches or perform other work but do not want to commit your current changes. 
+  This is useful when you have unfinished work that you need to temporarily set aside.
+  
+  The stash command temporarily saves uncommitted changes to allow you to switch branches or perform other actions without losing work in progress.
+  Temporarily saves changes in the working directory and index so you can work on something else without committing those changes.
+  
+  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+  
     
