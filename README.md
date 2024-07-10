@@ -53,7 +53,7 @@ cherry-pick:
   Applies the changes from a specific commit to your current branch without merging entire branches.
   
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
---03
+--04
 reset: 
   Moves the current branch to a different commit, discarding commits.
   Use reset to undo changes in your commit history. It is typically used to remove unwanted commits from a branch
@@ -84,7 +84,7 @@ Differences:
   •  Checkout: A versatile command for switching branches, updating the working directory to match a commit, and creating new branches, but can be confusing due to its multiple purposes.
 
   -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  --04
+  --05
   Stage" refers to preparing changes for the next commit. You use git add to stage changes.
   In Git, the terms stage and index refer to an intermediate area where changes are collected before they are committed to the repository.
   An intermediate area where changes are collected and reviewed before committing.
@@ -99,5 +99,16 @@ Differences:
   
   ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+  --06
+  In Git, the concept of a snapshot refers to a complete representation of the state of the project at a particular point in time. 
+  A "snapshot" in Git refers to a snapshot of your entire project's state at a specific point in time.
   
-    
+  Commits in Git are snapshots of your project, capturing the state of all files and directories at the time of the commit.
+  A Git object that stores a snapshot along with metadata about the changes, forming part of the project’s history.
+
+  Relationship: 
+  Each commit in Git captures a snapshot of the project, enabling efficient, reliable version control by storing the entire state of the project at the time of the commit.    This approach allows for powerful features such as branching, merging, and reverting to previous states with ease.
+
+  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+  --07
