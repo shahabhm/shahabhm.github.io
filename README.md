@@ -2,7 +2,7 @@
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-**01**
+**--01**
 Git folder is a directory that contains all the metadata and object data necessary for a Git repository to function.
 Git directory is created to store the following information:
 • Configuration Settings: Stored in the config file, which contains repository-specific configurations, such as user details and settings.
