@@ -52,4 +52,37 @@ cherry-pick:
   Applies the changes from a specific commit to your current branch without merging entire branches.
   
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+--03
+reset: 
+  Moves the current branch to a different commit, discarding commits.
+  Use reset to undo changes in your commit history. It is typically used to remove unwanted commits from a branch
+  
+revert: 
+  Creates new commits to undo specific changes made in the commit history.
+  Use revert to undo the changes from a previous commit in a safe way that preserves the integrity of the repository’s history. This is useful for reversing changes in a shared or public branch.
+  
+restore: 
+  Restores a file in your working directory to a specific commit state.
+  Use restore to discard changes in the working directory or to revert files to their state in a specific commit or the index. This command can be used to undo changes before staging or committing
 
+  swich:
+     switch is used to change branches more safely and clearly than checkout. It updates the working directory and index to match the specified branch.
+     Use switch to change branches without the risk of mistakenly checking out files or commits. It helps avoid confusion between checking out files and changing branches.
+
+checkout:
+  serves multiple purposes: switching branches, updating files in the working directory to match a commit, and creating new branches. It updates the working directory and index to reflect the specified branch, commit, or paths.
+  Use checkout to switch branches, revert files to a specific commit, or create new branches. However, it can be confusing due to its multiple uses, which led to the introduction of switch and restore.
+
+
+  
+Differences:
+  •  Reset: Alters the commit history by moving the branch pointer and optionally updating the index and working directory.
+  •  Revert: Creates a new commit that undoes the changes introduced by a specified commit, preserving the commit history.
+  •  Restore: Restores files in the working directory or index to their state in a specific commit or the index.
+  •  Switch: Changes branches safely and clearly, avoiding the confusion of checkout.
+  •  Checkout: A versatile command for switching branches, updating the working directory to match a commit, and creating new branches, but can be confusing due to its multiple purposes.
+
+  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  --04
+
+    
