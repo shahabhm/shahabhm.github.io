@@ -2,7 +2,7 @@
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
---01
+#01
 Git folder is a directory that contains all the metadata and object data necessary for a Git repository to function.
 Git directory is created to store the following information:
 • Configuration Settings: Stored in the config file, which contains repository-specific configurations, such as user details and settings.
@@ -16,7 +16,7 @@ Command: using by git init.
 When you run git init in a directory, Git initializes a new repository and creates a .git directory within it. This directory contains all the subdirectories and files mentioned above, setting up the necessary structure for tracking the project’s history and changes.
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
---02
+#02
 "Atomic" in Git refers to making a single, self-contained change that doesn't break the repository. “atomic” refers to an operation that is indivisible and irreducible, meaning it is performed as a single, complete unit without any possibility of partial completion or interruption.
 
 In an atomic commit, you make a single logical change in a single commit.
@@ -31,7 +31,7 @@ It help maintain code quality, make the review process more efficient, and simpl
 It minimizes the risk of introducing bugs and makes it easier to understand the evolution of the code over time.
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
---03
+#03
 fetch: 
   Retrieves changes from a remote repository without merging.
   Downloads changes from the remote repository but does not apply them.
@@ -53,7 +53,7 @@ cherry-pick:
   Applies the changes from a specific commit to your current branch without merging entire branches.
   
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
---04
+#04
 reset: 
   Moves the current branch to a different commit, discarding commits.
   Use reset to undo changes in your commit history. It is typically used to remove unwanted commits from a branch
@@ -84,7 +84,7 @@ Differences:
   •  Checkout: A versatile command for switching branches, updating the working directory to match a commit, and creating new branches, but can be confusing due to its multiple purposes.
 
   -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  --05
+  #05
   Stage" refers to preparing changes for the next commit. You use git add to stage changes.
   In Git, the terms stage and index refer to an intermediate area where changes are collected before they are committed to the repository.
   An intermediate area where changes are collected and reviewed before committing.
@@ -99,7 +99,7 @@ Differences:
   
   ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-  --06
+  #06
   In Git, the concept of a snapshot refers to a complete representation of the state of the project at a particular point in time. 
   A "snapshot" in Git refers to a snapshot of your entire project's state at a specific point in time.
   
@@ -111,7 +111,7 @@ Differences:
 
   ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-  --07
+  #07
   Local Repository:
   A local repository is a Git repository that exists on your local machine.
   It contains all the project files, commit history, branches, and configuration specific to your local copy. Here are some key characteristics of a local repository:
