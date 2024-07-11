@@ -2,11 +2,10 @@ let currentNumber = "";
 let previousNumber = "";
 let operator = "";
 let showMessage = "";
+
 function appendNumber(number) {
   currentNumber += number;
-  document.getElementById("display").value = currentNumber;
-
-  showMessage += currentNumber;
+  showMessage += currentNumber
   document.getElementById("display").value = showMessage;
 }
 
