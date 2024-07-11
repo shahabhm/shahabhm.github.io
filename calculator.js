@@ -4,9 +4,9 @@ let operator = "";
 let showMessage = "";
 
 function appendNumber(number) {
-  currentNumber += number;
-  showMessage += currentNumber;
-  document.getElementById("display").value = showMessage;
+  currentNumber += number
+  showMessage += currentNumber
+  document.getElementById("display").value = showMessage
 }
 
 function clearDisplay() {
