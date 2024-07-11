@@ -147,4 +147,28 @@ Summary of Differences:
        •    Local Repository: Commands like git add, git commit, git branch, git checkout.
        •    Remote Repository: Commands like git fetch, git pull, git push, git remote.
 
+  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+## Github rulesets
+
+To protect our main and develop branches, we have rules for them. These rules will prohibit committing directly on them
+and require one reviewer to approve the pull request.
+
+![img.png](assets/img2.png)
+
+## Github pages
+
+Since our project is using pure html and javascript, we don't need to build before deploying. we simply had to rename
+our repository name to `shahabhm.github.io` and put an `index.html` file in the root directory of our main branch.
+
+![img.png](assets/img.png)
+
+### GitHub workflow
+
+For our workflow, we have added a configuration which will test the calculator.js file against lint rules and will
+fail if there is a missing semicolon. This will prevent pull requests from being merged.
+
+The configuration resides in .github/workflows/Lint.yml.
+
+Whenever there is a pull request for develop or main, it will run. it firsts installs node, and then runs `npm run lint`
+which is set to run the linter on `calculator.js`.
