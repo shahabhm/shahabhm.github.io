@@ -1,19 +1,19 @@
 let currentNumber = "";
 let previousNumber = "";
 let operator = "";
-let showString = "";
+let showMessage = "";
 
 function appendNumber(number) {
   currentNumber += number;
-  showString += currentNumber
-  document.getElementById("display").value = showString;
+  showMessage += currentNumber
+  document.getElementById("display").value = showMessage;
 }
 
 function clearDisplay() {
   currentNumber = "";
   previousNumber = "";
   operator = "";
-  showString = "";
+  showMessage = "";
   document.getElementById("display").value = "";
 }
 
@@ -22,8 +22,9 @@ function appendOperator(op) {
     previousNumber = currentNumber;
     currentNumber = "";
     operator = op;
-    showString += op;
+    showMessage += op;
   }
+  document.getElementById("display").value = showMessage;
 }
 
 function calculate() {
@@ -53,9 +54,10 @@ function calculate() {
         break;
     }
 
+    showMessage = result.toString();
     previousNumber = "";
     operator = "";
-    showString = result.toString();
-    document.getElementById("display").value = showString;
+    currentNumber = "";
+    document.getElementById("display").value = showMessage;
   }
 }
